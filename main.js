@@ -19,7 +19,7 @@ loading.textContent = "Комментарии загружаются...";
     const appComments = responseData.comments.map((comment) => {
       return {
         name: comment.author.name,
-        date: format(new Date(comment.date), "yyyy-MM-dd HH:mm:ss"),
+        date: format(new Date(comment.date), "yyyy-MM-dd HH.mm.ss"),
         text: comment.text,
         likes: 0,
         isLiked: false,
